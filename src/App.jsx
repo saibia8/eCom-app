@@ -59,7 +59,6 @@ function App() {
           <Button tag="a">Button</Button>
         </Navbar.End>
       </Navbar>
-      <div>React</div>
     </>
   );
 }
