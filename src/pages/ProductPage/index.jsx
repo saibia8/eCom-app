@@ -1,10 +1,7 @@
+import PostDetail from "../../components/Posts/PostDetail";
+
 function ProductPage() {
-  return (
-    <article className="prose lg:prose-xl mx-auto">
-      <h1>Product page</h1>
-      <p>Some products.</p>
-    </article>
-  );
+  return <PostDetail />;
 }
 
 export default ProductPage;
