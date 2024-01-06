@@ -5,7 +5,7 @@ import useApi from "../../../hooks/useApi/index.js";
 function PostList() {
   const { data: products, isLoading, isError } = useApi(url);
 
-  if (isLoading) {
+  if (isLoading || !products) {
     return <div>Loading products...</div>;
   }
 

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { url } from "../../../constants/api";
 import useApi from "../../../hooks/useApi";
+import { Button, Card } from "react-daisyui";
 
 function PostDetail() {
   const { id } = useParams();
@@ -14,15 +15,36 @@ function PostDetail() {
     return <div>Error</div>;
   }
 
-  console.log(product);
+  const { title, description, imageUrl, discountedPrice, rating, reviews } =
+    product;
+
+  console.log(reviews);
 
   return (
-    <article className="prose lg:prose-xl mx-auto">
-      <h1>Product page</h1>
-      <div>id: {product.id}</div>
-      <div>title: {product.title}</div>
-      <div>description: {product.description}</div>
-    </article>
+    <div>
+      <div className="mb-3"></div>
+      <Card side="lg">
+        <Card.Image src={imageUrl} alt={title} />
+        <Card.Body>
+          <Card.Title tag="h2">{title}</Card.Title>
+          <p>{description}</p>
+          {rating !== 0 ? <p>Rating: {rating}</p> : ""}
+          <ul>Reviews: </ul>
+          {/* {reviews.length || reviews.length !== 0
+            ? reviews.map((review) => (
+                <li key={review.id}>
+                  {review.description} Rating: {review.rating} Username:{" "}
+                  {review.username}
+                </li>
+              ))
+            : "No reviews"} */}
+          <Card.Title tag="h3">Price: {discountedPrice} kr.</Card.Title>
+          <Card.Actions className="justify-center">
+            <Button color="primary">Add to cart</Button>
+          </Card.Actions>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 
