@@ -1,9 +1,22 @@
+import { Button, Card } from "react-daisyui";
+import CartList from "../../components/Cart/CartList";
+import { useCart } from "../../context/CartContext";
+
 function CheckoutPage() {
+  const { clearCart, totalPrice } = useCart();
   return (
-    <article className="prose lg:prose-xl mx-auto">
+    <>
       <h1>Checkout page</h1>
-      <p>Some checkout products.</p>
-    </article>
+      <CartList />
+      <Card.Actions className="justify-center">
+        <Card.Title tag="h2">
+          Total price: {totalPrice.toFixed(2)} kr.
+        </Card.Title>
+        <Button onClick={() => clearCart()} color="primary">
+          Finish Order
+        </Button>
+      </Card.Actions>
+    </>
   );
 }
 

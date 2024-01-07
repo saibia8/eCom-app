@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 function PostItem({ product }) {
   const { title, description, id, imageUrl, discountedPrice, rating, reviews } =
     product;
-  console.log(product);
-  console.log(reviews.length);
   return (
     <div>
       <div className="mb-3"></div>
