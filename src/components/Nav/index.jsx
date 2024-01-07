@@ -26,12 +26,22 @@ function Nav() {
             </svg>
           </Button>
           <Dropdown.Menu tabIndex={0} className="w-52 menu-sm mt-3 z-[1]">
-            <Dropdown.Item>
-              <Link to="/">Home</Link>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <Link to="contact">Contact</Link>
-            </Dropdown.Item>
+            <div className="my-1">
+              <Link
+                to="/"
+                className="block px-4 py-2 text-white hover:bg-gray-600"
+              >
+                Home
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="contact"
+                className="block px-4 py-2 text-white hover:bg-gray-600"
+              >
+                Contact
+              </Link>
+            </div>
           </Dropdown.Menu>
         </Dropdown>
         <div className="flex gap-4 items-center">

@@ -4,7 +4,7 @@ function CheckoutSuccessPage() {
   return (
     <article className="prose lg:prose-xl mx-auto">
       <h1>Checkout success page</h1>
-      <p>Your order is send!</p>
+      <p>Your order has been sent!</p>
       <Link to="/">Go back to Home page</Link>
     </article>
   );
