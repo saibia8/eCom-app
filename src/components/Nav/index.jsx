@@ -35,18 +35,20 @@ function Nav() {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Link className="normal-case text-xl" to="/">
-          eCom
-        </Link>
-        <div className="flex-none gap-2">
-          <Form>
-            <Input
-              bordered
-              type="text"
-              placeholder="Search"
-              className="w-24 md:w-auto"
-            />
-          </Form>
+        <div className="flex gap-4 items-center">
+          <Link className="normal-case text-xl" to="/">
+            eCom
+          </Link>
+          <div className="flex-none gap-2">
+            <Form>
+              <Input
+                bordered
+                type="text"
+                placeholder="Search"
+                className="w-24 md:w-auto"
+              />
+            </Form>
+          </div>
         </div>
       </Navbar.Start>
       <Navbar.Center className="hidden lg:flex">

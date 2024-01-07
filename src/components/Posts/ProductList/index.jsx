@@ -1,5 +1,5 @@
 import { url } from "../../../constants/api.js";
-import PostItem from "../PostItem/index.jsx";
+import PostItem from "../ProductItem/index.jsx";
 import useApi from "../../../hooks/useApi/index.js";
 
 function PostList() {
