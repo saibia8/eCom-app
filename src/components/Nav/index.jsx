@@ -27,18 +27,12 @@ function Nav() {
           </Button>
           <Dropdown.Menu tabIndex={0} className="w-52 menu-sm mt-3 z-[1]">
             <div className="my-1">
-              <Link
-                to="/"
-                className="block px-4 py-2 text-white hover:bg-gray-600"
-              >
+              <Link to="/" className="block px-4 py-2 hover:bg-gray-600">
                 Home
               </Link>
             </div>
             <div>
-              <Link
-                to="contact"
-                className="block px-4 py-2 text-white hover:bg-gray-600"
-              >
+              <Link to="contact" className="block px-4 py-2 hover:bg-gray-600">
                 Contact
               </Link>
             </div>
