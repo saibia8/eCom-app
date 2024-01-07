@@ -1,4 +1,4 @@
-import PostDetail from "../../components/Posts/PostDetail";
+import PostDetail from "../../components/Posts/ProductDetail";
 
 function ProductPage() {
   return (
