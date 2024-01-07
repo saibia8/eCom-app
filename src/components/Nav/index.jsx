@@ -1,6 +1,7 @@
-import { Button, Dropdown, Form, Input, Menu, Navbar } from "react-daisyui";
+import { Button, Dropdown, Menu, Navbar } from "react-daisyui";
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
+import ProductFilter from "../Posts/ProductFilter";
 
 function Nav() {
   const { totalItems } = useCart();
@@ -40,14 +41,7 @@ function Nav() {
             eCom
           </Link>
           <div className="flex-none gap-2">
-            <Form>
-              <Input
-                bordered
-                type="text"
-                placeholder="Search"
-                className="w-24 md:w-auto"
-              />
-            </Form>
+            <ProductFilter />
           </div>
         </div>
       </Navbar.Start>
