@@ -27,12 +27,10 @@ function Nav() {
           </Button>
           <Dropdown.Menu tabIndex={0} className="w-52 menu-sm mt-3 z-[1]">
             <Dropdown.Item>
-              Home
-              {/* <Link to="/">Home</Link> */}
+              <Link to="/">Home</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-              Contact
-              {/* <Link to="contact">Contact</Link> */}
+              <Link to="contact">Contact</Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

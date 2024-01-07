@@ -14,7 +14,9 @@ function CheckoutPage() {
 
   return (
     <>
-      <h1>Checkout page</h1>
+      <article className="prose lg:prose-xl mx-auto">
+        <h1>Checkout page</h1>
+      </article>
       <CartList />
       <Card.Actions className="justify-center">
         <Card.Title tag="h2">

@@ -3,7 +3,9 @@ import PostList from "../../components/Posts/ProductList";
 function HomePage() {
   return (
     <>
-      <h1>Home page</h1>
+      <article className="prose lg:prose-xl mx-auto">
+        <h1>Home page</h1>
+      </article>
       <PostList />
     </>
   );
