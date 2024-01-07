@@ -36,7 +36,7 @@ function Nav() {
           </Dropdown.Menu>
         </Dropdown>
         <Link className="normal-case text-xl" to="/">
-          daisyUI
+          eCom
         </Link>
         <div className="flex-none gap-2">
           <Form>
