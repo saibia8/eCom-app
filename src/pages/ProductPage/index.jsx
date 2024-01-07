@@ -4,7 +4,7 @@ function ProductPage() {
   return (
     <>
       <article className="prose lg:prose-xl mx-auto">
-        <h3>Product page</h3>
+        <h1>Product page</h1>
       </article>
       <PostDetail />
     </>
