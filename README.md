@@ -1,6 +1,6 @@
 # Front-end Frameworks (Course assignment)
 
-<img src="" width="500">
+<img src="/src/eCom-app-screenshot.jpg" width="500">
 
 This is my first project in React after 5 weeks of learning. The assignment was to create an e-commerce store.
 
