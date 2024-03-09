@@ -46,8 +46,18 @@ This project should reflect my technical knowledge and skills using the React fr
 
 ## Getting Started
 
-### Installing
-
+1. Clone the repo
+  ```sh
+    https://github.com/saibia8/eCom-app.git
+  ```
+2. Install dependencies
+  ```sh
+  npm install
+  ```
+3. Start the development server
+  ```sh
+  npm run dev
+  ```
 ## Contributing
 
 This project was made for learning purposes, therefore no contributions are accepted.
